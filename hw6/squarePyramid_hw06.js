@@ -1,4 +1,3 @@
-// squarePyramid_hw06.js (Homework06 folder)
 
 export class SquarePyramid {
     constructor(gl) {
@@ -13,7 +12,6 @@ export class SquarePyramid {
         const halfSize = 0.5;
         const height = 1.0;
 
-        // x, y, z, u, v
         const vertices = new Float32Array([
             // 1. Base (Bottom)
             -halfSize, 0.0, halfSize, 0.0, 1.0,
@@ -61,11 +59,9 @@ export class SquarePyramid {
 
         const stride = 5 * Float32Array.BYTES_PER_ELEMENT; 
 
-        // a_position (location = 0)
         gl.vertexAttribPointer(0, 3, gl.FLOAT, false, stride, 0);
         gl.enableVertexAttribArray(0);
 
-        // a_texCoord (location = 1)
         const texCoordOffset = 3 * Float32Array.BYTES_PER_ELEMENT;
         gl.vertexAttribPointer(1, 2, gl.FLOAT, false, stride, texCoordOffset);
         gl.enableVertexAttribArray(1);
