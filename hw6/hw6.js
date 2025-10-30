@@ -106,7 +106,7 @@ function handleMouseMove(event) {
 
     const rotY = mat4.fromYRotation(mat4.create(), glMatrix.toRadian(deltaX * 0.5));
     const rotX = mat4.fromXRotation(mat4.create(), glMatrix.toRadian(deltaY * 0.5));
-)
+
     const rotationDelta = mat4.multiply(mat4.create(), rotY, rotX);
 
     mat4.multiply(currentRotation, rotationDelta, currentRotation);
