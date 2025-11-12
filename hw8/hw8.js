@@ -10,10 +10,10 @@ hw8.js (modified from 20_DirectionalLight.js)
 - Applying solid color for computing diffuse reflection (matches video)
 - Lighting by directional light (Toon Shading)
 ----------------------------------------------------------------------------------*/
-import { resizeAspectRatio, setupText, updateText, Axes } from '../util/util.js';
-import { Shader, readShaderFile } from '../util/shader.js';
-import { Arcball } from '../util/arcball.js';
-import { Cylinder } from '../util/cylinder.js';
+import { resizeAspectRatio, setupText, updateText, Axes } from './util/util.js';
+import { Shader, readShaderFile } from './util/shader.js';
+import { Arcball } from './util/arcball.js';
+import { Cylinder } from './util/cylinder.js';
 
 const canvas = document.getElementById('glCanvas');
 const gl = canvas.getContext('webgl2');
